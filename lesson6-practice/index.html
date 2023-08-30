@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <div id="app">
+      <form class="form">
+        <fieldset class="fieldset">
+          <label for="task">Title : </label>
+
+          <input
+            id="task-title"
+            name="task-title"
+            type="text"
+            placeholder="Title"
+          />
+        </fieldset>
+        <fieldset class="fieldset">
+          <label for="task">Desctiption : </label>
+
+          <input
+            id="task-description"
+            name="task-description"
+            type="text"
+            placeholder="Description"
+          />
+        </fieldset>
+
+        <div class="btn-wrapper">
+          <button class="btn" id="btn">Send</button>
+        </div>
+      </form>
+
+      <div id="task-manager"></div>
+      <div id="done">
+        <h1>DONE!</h1>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

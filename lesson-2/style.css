@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100vh;
+    background: linear-gradient(magenta, purple);
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 50%;
+    background: lightcoral;
+    padding: 2rem;
+}
+
+p {
+    padding: 2rem;
+    background: lightcyan;
+    color: black;
+}

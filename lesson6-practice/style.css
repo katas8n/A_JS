@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  background: inherit;
+  border: none;
+  border-bottom: 1.5px solid magenta;
+  padding: .4rem;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+
+#app {
+  height: 100vh;
+  background:  rgb(97, 19, 97);
+  color: rgb(205, 228, 248);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#btn { 
+  box-shadow: 3px 5px 4px magenta;
+  border: 1px solid rgb(250, 113, 250);
+  background: inherit;
+  padding: 1rem 3rem;
+  color: aliceblue;
+  text-transform: uppercase;
+  margin-top: 1.2rem;
+  border-radius: .5rem;
+}
+
+.task {
+  padding: 2rem;
+  margin-top: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task>h3 {
+
+  width: 15%;
+}
+
+.task>p {
+  width: 75%;
+}
+
+.btn--delete , .btn--done {
+  background: inherit;
+  padding: 1rem 1.5rem;
+  color: aliceblue;
+  text-transform: uppercase;
+  border-radius: .5rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.btn--delete:hover {
+  box-shadow: 3px 5px 4px tomato;
+  border: 1px solid tomato;
+}
+
+.btn--done:hover  {
+  box-shadow: 3px 5px 4px lightgreen;
+  border: 1px solid lightgreen;
+}

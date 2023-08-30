@@ -1,0 +1,3 @@
+- When user clicks "DONE" retrieve a parent of btn and put it in "done";
+- After operation above element should disappear from "task-manager" 
+and appear in "done" section

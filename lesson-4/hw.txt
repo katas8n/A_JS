@@ -1,0 +1,28 @@
+Task 
+
+Create following DOM structure via JS : 
+
+
+            <head>| 
+<html> ---->
+            <body>| 
+                        <div id="chat"> -> 
+                                            screen - > div. class = "screen" ,
+                                            backgroud = darkmagenta ; 
+
+                                        keyboard with emojies : lol , kek  ... etc 
+
+                                        gif : some gifs 
+
+                        <div class="main-keyboard">
+                                                    -> every letter on a keyboard 
+            </body>| 
+1) Is main-keyboard parent of letter ?
+2) Is chat child of body?
+3) What is difference between "HTMLCollection" and "NodeList"?
+4) What does class in JS do? 
+5) Why sould we use classes ?
+6) What is DOM in JS ? Do you think it's object ? 
+7) How many types of function do you know ? decl , exp , an
+8) What are diffecrences between class and constructor and simple function ?
+9) DO you think classes useful ? 
