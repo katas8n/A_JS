@@ -1,4 +1,4 @@
-// library
+// libraries
 // own components
 
 import { tasks } from "./model/tasks";
@@ -11,7 +11,7 @@ import { tasksToHTML } from "./utils/toHTML";
 import "./style.css";
 
 const taskManager = document.getElementById("task-manager");
-const done = document.getElementById("done");
+const doneManager = document.getElementById("done");
 
 const title = document.querySelector("#task-title");
 const description = document.querySelector("#task-description");
@@ -28,7 +28,10 @@ send.addEventListener("click", (e) => {
 
   tasks.push(task);
 
-  tasksToHTML(tasks, taskManager);
+  tasksToHTML(tasks, taskManager, doneManager);
+
+  title.value = "";
+  description.value = "";
 });
 
-tasksToHTML(tasks, taskManager);
+tasksToHTML(tasks, taskManager, doneManager);

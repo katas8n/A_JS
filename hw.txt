@@ -1,3 +1,30 @@
-- When user clicks "DONE" retrieve a parent of btn and put it in "done";
-- After operation above element should disappear from "task-manager" 
-and appear in "done" section
+*** Form code message : 
+Class which required to given a string , replace every letter with its position
+in the alphabet .
+For example : 
+"a" = 1
+"b" = 2
+
+"Hello world"
+23 13 2 3 1 23 2 3 
+
+a - 1
+b - 2 
+d - 3
+space - space 
+
+input : "    the bed is bad "
+
+output : "20 11 8 2 5 4 9 19 2 1 4" (by alphabet order)
+-----------example
+str = ""
+
+if(char === "a") {
+    str += "1 "
+}
+
+if(char === "z") {
+    str += "26 "
+}
+
+str = "1 26"
