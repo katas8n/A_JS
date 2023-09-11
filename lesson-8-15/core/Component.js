@@ -23,10 +23,27 @@ export class Component {
   toHTML() {
     this.element = document.createElement(this.tagName);
     this.element.className = this.className;
+    this.element.textContent = this.textContent;
 
+    this.html &&
+      this.element.insertAdjacentHTML(this.html.position, this.html.text);
+    if (this.events) {
+      for (const event in this.events) {
+        const action = this.events[event];
+
+        this.element.addEventListener(event, action);
+      }
+    }
     if (this.children) {
       for (const child of this.children) {
         append(child, this.element);
+      }
+    }
+
+    if (this.attrs) {
+      for (const key in this.attrs) {
+        const value = this.attrs[key];
+        this.element[attr] = value;
       }
     }
 

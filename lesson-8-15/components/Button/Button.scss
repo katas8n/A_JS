@@ -1,0 +1,11 @@
+@import '../../common/variables.scss';
+
+.btn {
+    background: linear-gradient($main-bg , $secondary-bg);
+    padding: .3rem 4rem;
+    border: none;
+    border-radius: .4rem;
+    color: $main-color;
+    font-size: $ff-m;
+    cursor: pointer;
+}

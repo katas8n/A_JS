@@ -1,8 +1,6 @@
-import { Component } from "../../core/Component";
+import { Component } from "../core/Component";
 
-import "./Input.scss";
-
-export class Input extends Component {
+export class Register extends Component {
   constructor({
     tagName,
     textContent,

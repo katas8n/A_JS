@@ -1,30 +1,14 @@
-*** Form code message : 
-Class which required to given a string , replace every letter with its position
-in the alphabet .
-For example : 
-"a" = 1
-"b" = 2
+*** Create Phone number : 
+Write a function that accepts an array of 10 integers (between 0 and 9) 
+and returns a string which represents numbers as a phone format :
 
-"Hello world"
-23 13 2 3 1 23 2 3 
+function createPhoneFormat([1,2,3,4,5,6,7,8,9,0]) returns (123) 456-7890
 
-a - 1
-b - 2 
-d - 3
-space - space 
-
-input : "    the bed is bad "
-
-output : "20 11 8 2 5 4 9 19 2 1 4" (by alphabet order)
------------example
-str = ""
-
-if(char === "a") {
-    str += "1 "
-}
-
-if(char === "z") {
-    str += "26 "
-}
-
-str = "1 26"
+1. Extract phoneNumber from input
+2. Create and extract userName
+3. Click on a button (create object with correct phone number and userName)
+4. Create modal window where u will put following message :
+ "Hello , xxx . We will phone you in 30 minutes by xxx number(which is correct) . 
+ Thanks for watching!"
+ 
+ and this window will apear when button is clicked

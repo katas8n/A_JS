@@ -1,8 +1,6 @@
-import { Component } from "../../core/Component";
+import { Component } from "../core/Component";
 
-import "./Button.scss";
-
-export class Button extends Component {
+export class Login extends Component {
   constructor({
     tagName,
     textContent,
