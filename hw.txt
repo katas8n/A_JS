@@ -1,0 +1,19 @@
+1. What do classes do ? 
+2. Use 'debbuger'. -> Send me a screenshot 
+3. Start your own project . It might be similar to your favourite game .
+4. Describe what are you gonna do ? 
+You should give me :
+- Schemas (classes(methods / attributes / fields) )
+- relations between them) 
+- actions (as a text)
+5. I want you to prepare a struct of proj -> directories , files .
+6. START YOUR PROJECT 
+
+
+|==================================================================
+1. U must create UI of loading screen / game - menu (New game , load 
+, register/login , exit)
+2. Describe events in your game 
+3. Registration with validation (min / max / symbols /numbers) 
+
+(optional) this project includes two people , find your partner .
