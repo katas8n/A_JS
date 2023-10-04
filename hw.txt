@@ -17,3 +17,33 @@ You should give me :
 3. Registration with validation (min / max / symbols /numbers) 
 
 (optional) this project includes two people , find your partner .
+
+
++--------------------------------------------+
+
+1. "I can start ur new game" 
+2. Certain amount of actions work 
+
++--------------------------------------------+
+!!!!IMAGES
+
+1. Create class Human (default age = 0)
+2. Create classes (abstr): Developer , Clerk , Admin , Doctor , Driver , Unemployed 
+3. Avarage human has following attrs : name , surname , age , salary , gender, balance , rel
+4. if human is :
+             admin - it's salary - 399 ,
+             developer - it's salary - 499 ,
+             doctor -  it's salary - 899 , 
+             driver  it's salary - 199 , 
+             Unemployedit's salary - 100
+
+
+5.Create classes : Over , Medium , Under -> empty
+6.Create classes : House(price , area , descr, img , where ?) , Car (attrs up to you)
+7.Create classes : City 
+8.Create classes : Education -> split it  
+
+9. Create form in HTML -> get : name , surname , gender. 
+10. Create .html file 
+11. via JS add there Human (average) (name , surname , gender, img)
+

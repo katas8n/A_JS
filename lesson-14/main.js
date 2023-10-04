@@ -440,4 +440,135 @@ if (22 < 23) {
 
 // console.log("[reducedArr]", reducedArr);
 
-// ! Object , Classes (static , get/set , OOP) , SOLID , async ->
+// ! Object , Classes (static , get/set , OOP) , SOLID , async / DOM && BOM ->
+// OOP -> programming paradigm , which orginizes code based on objects
+// Class -> blueprint , or template for creating objects ; We describe here attributes and methods for potential instances
+// Object -> data structure , which provide us a scope , where informatio/data is kept.
+
+//!  Abstract -> blueprint over a blueprint
+class Person {
+  // fields (with privat scope)
+  legs = 2;
+  hands = 2;
+  // ! class gives us opportunities to define variables but not call anything
+  // console.log('[x]', x);
+
+  // 'new' will call constructor ;
+  constructor(n, s, a) {
+    // this
+    this.name = n;
+    this.surname = s;
+    this.age = a;
+    console.log(this);
+  }
+
+  getName() {
+    console.log("[this.name]", this.name);
+  }
+
+  breath() {
+    console.log("Ehh");
+  }
+
+  introduce() {
+    console.log(`Hi , my name ${this.name}`);
+  }
+}
+
+const person = new Person("John");
+
+// const person = {
+//   name : "John",
+//   getName: () => {
+//     console.log('[person.name]', person.name);
+//   }
+// };
+
+// const person2 = new Person("Mike");
+
+// person.getName();
+
+// person.breath();
+// person2.breath();
+// console.log("[person]", person.x);
+
+// ! Encapsulation  -> OOP's concept, which joins attrs and methods to object
+// class Card {
+//   INITIAL_VALUE = 0;
+
+//   constructor(initialValue = this.INITIAL_VALUE) {
+//     this.balance = initialValue;
+//   }
+
+//   deposit(sum) {
+//     this.balance += sum;
+//   }
+
+//   getMoney(sum) {
+//     this.balance -= sum;
+//   }
+// }
+
+// const card = new Card();
+// const card2 = new Card();
+
+// console.log("[card]", card);
+
+// card2.deposit(2323);
+// card.getMoney(23);
+
+// console.log("[card2]", card2);
+
+// console.log("[card]", card);
+
+// ! Inheritance -> allows us to extend one class from another ->
+class Chief extends Person {
+  constructor(n, s, a, p) {
+    super(n, s, a);
+    this.p = p;
+  }
+
+  // Polymorphism -> classes might have common methods, but we might overdrive it ;
+  do() {
+    console.log("I'm a chief , I cook a dinner.");
+  }
+}
+
+class Admin extends Person {
+  constructor(n, s, a, p) {
+    super(n, s, a);
+    this.p = p;
+  }
+
+  // Polymorphism -> classes might have common methods, but we might overdrive it ;
+  do() {
+    console.log("I'm an admin , I fix complukters troubles.");
+  }
+}
+
+class Developer extends Person {
+  constructor(n, s, a, p) {
+    super(n, s, a);
+    this.p = p;
+  }
+
+  // Polymorphism -> classes might have common methods, but we might overdrive it ;
+  do() {
+    console.log("I write a code. I'm a programmer.");
+  }
+}
+
+// Polymorphism -> classes might have common methods, but we might overdrive it ;
+
+const john = new Developer("John", "Doe", 23, "dev");
+john.do();
+
+const mike = new Admin("Mike", "Bibby", 32, "admin");
+mike.do();
+
+const bob = new Chief("Bob", "Tyson", 13, "chief");
+bob.do();
+
+console.log("[john]", john);
+console.log("[mike]", mike);
+console.log("[bob]", bob);
