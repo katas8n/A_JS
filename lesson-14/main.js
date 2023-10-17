@@ -370,8 +370,10 @@ if (22 < 23) {
 //   return this.name;
 // }
 
-// const john = getUserName.call({ name: "John" });
-// console.log("[john]", john);
+// const johnNameObj = { name: "John" };
+
+// const johnsName = getUserName.call(johnNameObj);
+// console.log("[johnsName]", johnsName);
 
 // ! Array
 // const mapedArr = [
@@ -397,7 +399,7 @@ if (22 < 23) {
 //     name: "Mike",
 //     surname: "Bibby",
 //   },
-// ].forEach((person) => {
+// [{name : "John"}].forEach((person) => {
 //   arr.push(person);
 // });
 
@@ -435,6 +437,7 @@ if (22 < 23) {
 //   },
 // ].reduce((prev, current, i) => {
 //   prev += current.salary;
+
 //   return prev;
 // }, 0);
 
@@ -474,8 +477,6 @@ class Person {
     console.log(`Hi , my name ${this.name}`);
   }
 }
-
-const person = new Person("John");
 
 // const person = {
 //   name : "John",
@@ -572,3 +573,6 @@ bob.do();
 console.log("[john]", john);
 console.log("[mike]", mike);
 console.log("[bob]", bob);
+
+// ! OOP -> staticMethods / overdrives
+// ! || DOM && BOM ||| -> async -> promise -> async/await => xmlHttpRequest -> fetch

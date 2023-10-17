@@ -25,16 +25,16 @@
 //     ]
 // };
 
-// let isRunning = true ; 
+// let isRunning = true ;
 // let i = 0 ;
 
 // while(isRunning){
-//         const userChoice = prompt("Hi , there! U might : 1) Add new category 2) Show films 3) Add new film 4) Quit");   
+//         const userChoice = prompt("Hi , there! U might : 1) Add new category 2) Show films 3) Add new film 4) Quit");
 
 //         switch(userChoice) {
 //             case '1':
 //                 addCategory(categories);
-//                 break;  
+//                 break;
 
 //             case '2' :
 //                 showFilmsByCategory(categories);
@@ -45,14 +45,13 @@
 
 //             case '4' :
 //                 isRunning = false;
-            
+
 //             default :
 //                 console.log("There is an error into ur message");
 //                 break;
 //         }
 
 //         isRunning = isStop();
-
 
 // }
 
@@ -63,7 +62,7 @@
 // function showFilmsByCategory(films) {
 //     for(const category in films) {
 //         const value = films[category]
-       
+
 //         if(category === "drama") {
 //             console.log('[value]', value);
 //         }else if(category=== "comedy"){
@@ -77,7 +76,6 @@
 // function addCategory(categories) {
 //     const newCategory = prompt("What is the category that you gonna add here ?")
 //     categories[newCategory] = [];
-
 
 //     console.log(categories);
 // }
@@ -107,7 +105,6 @@
 //     }
 //     return pickedCategory;
 // }
-
 
 // let isRunning = true ;
 
@@ -173,7 +170,7 @@
 //     NAME_BY_DEFAULT = "Unknown";
 
 //     constructor(name){
-//         //{} 
+//         //{}
 //         this.name = name;
 //         this.validateName();
 //     }

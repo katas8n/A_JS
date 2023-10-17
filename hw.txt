@@ -27,10 +27,16 @@ You should give me :
 +--------------------------------------------+
 !!!!IMAGES
 
+! Use solid here !  
+
+Comment every piece of code where are you use SOLID! 
+
 1. Create class Human (default age = 0)
-2. Create classes (abstr): Developer , Clerk , Admin , Doctor , Driver , Unemployed 
-3. Avarage human has following attrs : name , surname , age , salary , gender, balance , rel
+2. Create classes : Developer, Clerk , Admin , Doctor , Driver , Unemployed 
+3. Avarage human has following attrs : name , surname , age , salary , gender, balance , house 
+, rel
 4. if human is :
+they must : work + work dependencies (Example , if it's a dev - its might : write code , read code , push to git , get code review ))
              admin - it's salary - 399 ,
              developer - it's salary - 499 ,
              doctor -  it's salary - 899 , 
@@ -47,3 +53,17 @@ You should give me :
 10. Create .html file 
 11. via JS add there Human (average) (name , surname , gender, img)
 
+---------------
+
+12. Create following buttons on the page (html) : 
+- Live a month
+- Live a year
+if user has  clicked on "Live a month" you will add to user.age 1/12
+if user has  clicked on " Live a year" you will add to user.age 1
+
+if user age is 65 listener stops its work
+
+13. Add to img class : rounded 
+if img class includes "rounded" we will round img 
+
+//
