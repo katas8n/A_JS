@@ -10,7 +10,8 @@ export class Human {
   #balance;
   #gender;
   #rel;
-  constructor({ firstName, salary, job, balance, gender }) {
+  #avatar;
+  constructor({ firstName, salary, job, balance, gender, avatar }) {
     // # - is a modifier , make put attr to privat section
     this.#firstName = firstName;
     this.#age = AGE_BY_DEFAULT;
@@ -19,6 +20,15 @@ export class Human {
     this.#balance = balance;
     this.#gender = gender;
     this.#rel = REL_BY_DEFAULT;
+    this.#avatar = avatar;
+  }
+
+  getAvatar() {
+    return this.#avatar;
+  }
+
+  setAvatar(newAvararLink) {
+    this.#avatar = newAvararLink;
   }
 
   setSalary(salary) {

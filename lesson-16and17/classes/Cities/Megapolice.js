@@ -1,6 +1,6 @@
 import { BaseCity } from "./BaseCity";
 
-class Megapolice extends BaseCity {
+export class Megapolice extends BaseCity {
   constructor({ population, eco, rating, crimeRate, size }) {
     super({ population, eco, rating, crimeRate, size });
     this.setPopulation(1000000);

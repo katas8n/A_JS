@@ -1,0 +1,11 @@
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.person-img  {
+  height: 300px;
+  width: 300px;
+  border-radius:50% ;
+}

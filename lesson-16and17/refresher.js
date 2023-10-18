@@ -113,3 +113,38 @@ import "./style.css";
 //     footer[0].removeEventListener("click", onClickHandler);
 //   }
 // });
+
+// ! Async JS
+// setTimeout(() => {
+//   console.log("We are here(1)");
+// }, 0);
+
+// new Promise((res, rej) => {
+//   setTimeout(() => {
+//     console.log("We are here(2)");
+//   }, 500);
+// });
+
+// console.log("We are here (3)");
+// console.log("HEHE");
+
+// const xhr = new XMLHttpRequest();
+
+// xhr.open("get", "https://swapi.dev/api/people", false);
+
+// xhr.onload = function () {
+//   console.log(xhr.responseText);
+// };
+
+// xhr.send();
+
+// console.log("Hello world");
+
+// fetch("https://swapi.dev/api/people").then((res) => {
+//   const json = res.json();
+//   console.log("[json]", json);
+
+//   json.then((res) => {
+//     console.log(res);
+//   });
+// });

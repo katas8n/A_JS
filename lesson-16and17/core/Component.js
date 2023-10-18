@@ -7,18 +7,32 @@ export class Component {
   #events;
   #textContent;
   #attrs;
+  #html;
 
-  constructor({ tagName, className, children, events, textContent, ...attrs }) {
+  constructor({
+    tagName,
+    className,
+    children,
+    events,
+    textContent,
+    html,
+    ...attrs
+  }) {
     this.#tagName = tagName;
     this.#className = className;
     this.#textContent = textContent;
     this.#children = children || [];
     this.#events = events;
     this.#attrs = attrs;
+    this.#html = html;
   }
 
   get attributes() {
     return this.#attrs;
+  }
+
+  get html() {
+    return this.#html;
   }
 
   get tagName() {
