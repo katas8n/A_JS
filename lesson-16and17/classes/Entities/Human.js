@@ -11,6 +11,7 @@ export class Human {
   #gender;
   #rel;
   #avatar;
+  #inventory;
   constructor({ firstName, salary, job, balance, gender, avatar }) {
     // # - is a modifier , make put attr to privat section
     this.#firstName = firstName;
@@ -21,18 +22,51 @@ export class Human {
     this.#gender = gender;
     this.#rel = REL_BY_DEFAULT;
     this.#avatar = avatar;
+    this.#inventory = [];
   }
 
-  getAvatar() {
-    return this.#avatar;
+  getInventory() {
+    return this.#inventory;
   }
 
-  setAvatar(newAvararLink) {
-    this.#avatar = newAvararLink;
+  setInventory(inventory) {
+    this.#inventory = inventory;
   }
 
-  setSalary(salary) {
-    this.#salary = salary;
+  getRel() {
+    return this.#rel;
+  }
+
+  setRel(rel) {
+    this.#rel = rel;
+  }
+
+  getGender() {
+    return this.#gender;
+  }
+
+  setGender(gender) {
+    this.#gender = gender;
+  }
+
+  getBalance(balance) {
+    return this.#balance;
+  }
+
+  setBalance(balance) {
+    this.#balance = balance;
+  }
+
+  getAge() {
+    return this.#age;
+  }
+
+  setAge(age) {
+    this.#age = age;
+  }
+
+  getJob() {
+    return this.#job;
   }
 
   setJob(job) {
@@ -44,7 +78,23 @@ export class Human {
     return this.#firstName;
   }
 
+  setName(firstName) {
+    this.#firstName = firstName;
+  }
+
   getSalary() {
     return this.#salary;
+  }
+
+  setSalary(salary) {
+    this.#salary = salary;
+  }
+
+  getAvatar() {
+    return this.#avatar;
+  }
+
+  setAvatar(avararLink) {
+    this.#avatar = avararLink;
   }
 }

@@ -21,51 +21,11 @@ const root = document.querySelector("#app");
 
 const app = new Application({});
 
-app.addChildren([
-  new Header({
-    children: [
-      new Component({
-        tagName: "a",
-        className: "header-link",
-        textContent: "About us",
-        events: {
-          click: (e) => {
-            render(
-              main,
-              new Component({
-                tagName: "div",
-                html: `<h2>ABOUT US</h2>`,
-              }).toHTML()
-            );
-          },
-        },
-      }),
-      new Component({
-        tagName: "a",
-        className: "header-link",
-        textContent: "About us",
-        events: {
-          click: (e) => {
-            render(
-              main,
-              new Component({
-                tagName: "div",
-                html: `<h2>Personal page</h2>`,
-              }).toHTML()
-            );
-          },
-        },
-      }),
-    ],
-  }),
-  new Main({}),
-  new Footer({}),
-]);
+app.addChildren([new Header({}), new Main({}), new Footer({})]);
 
 const App = app.toHTML();
 
 const [header, main, footer] = App.children;
-
 const randomPersonIndex = getRandomNumber(PERSON_BY_DEFAULT.length);
 
 const player = PERSON_BY_DEFAULT[randomPersonIndex];
@@ -76,8 +36,16 @@ appendElement(
     tagName: "div",
     className: "person",
     html: `
-    <h2 class='person-name'>Name : ${player.getName()}</h2>
-    <h3 class='person-salary'>Salary : ${player.getSalary()}</h3>
+    <h2 class='person-data'>Name : ${player.getName()}</h2>
+    <h3 class='person-data'>Age : ${player.getAge()}</h3>
+    <h3 class='person-data'>Salary : ${player.getSalary()}</h3>
+    <h3 class='person-data'>Balance : ${player.getBalance()}</h3>
+    <h3 class='person-data'>Balance : ${
+      player.getJob() ? player.getJob() : "There is nothing here yet"
+    }</h3>
+    <h3 class='person-data'>Relations : ${
+      player.getRel() ? player.getRel() : "Single"
+    }</h3>
 
     <div class="person-img-wrapper">
         <img class='person-img' src="${player.getAvatar()}"/> 

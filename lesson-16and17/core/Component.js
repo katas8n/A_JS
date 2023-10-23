@@ -59,6 +59,10 @@ export class Component {
     this.#tagName = tagName;
   }
 
+  setHTML(html) {
+    this.#html = html;
+  }
+
   setClassName(className) {
     this.#className = className;
   }

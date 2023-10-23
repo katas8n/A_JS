@@ -23,8 +23,6 @@ export const toHTML = (instance) => {
 
     if (events) {
       for (let key in events) {
-        console.log("[key]", key);
-        console.log("[]", events[key]);
         element.addEventListener(key, events[key]);
       }
     }
