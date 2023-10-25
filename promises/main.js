@@ -1,34 +1,24 @@
-const people = document.querySelector("#people");
-const starships = document.querySelector("#starships");
-const vehicles = document.querySelector("#vehicles");
-const planets = document.querySelector("#planets");
+const URL_BY_DEFAULT = "https://swapi.dev/api/";
 
-// Re-write function (more efficient way)
-async function getData() {
-  // promise
+const buttons = document.getElementsByTagName("button");
 
-  //   fetch
-  const data = await fetch("https://swapi.dev/api/${}");
-  const parseData = await data.json();
+const root = document.getElementById("root");
 
-  await parseData.results.forEach((el) => {
-    console.log("[el]", el);
+[...buttons].forEach((button) => {
+  button.addEventListener("click", (e) => {
+    const buttonsID = e.target.id;
+
+    getData(URL_BY_DEFAULT, buttonsID, root);
   });
-
-  return parseData;
-}
-
-people.addEventListener("click", () => {
-  console.log("[getData]", getData());
 });
 
-// Get starship
-starships.addEventListener("click", () => {});
-// Get vehicles
-vehicles.addEventListener("click", () => {});
-// Get planets
-planets.addEventListener("click", () => {});
+async function getData(url = URL_BY_DEFAULT, specific, node) {
+  const data = await fetch(url + specific);
+  const parseData = await data.json();
 
-// ***
-// If button is clicked it returns data ,
-// then lead data to HTML and append on the screen
+  const preparedData = await parseData.results.map((el) => {
+    return `<h3>Name : ${el.name}</h3>`;
+  });
+
+  node.innerHTML = await preparedData;
+}
