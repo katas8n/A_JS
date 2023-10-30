@@ -9,4 +9,5 @@ export const render = (node, elements) => {
   });
 
   if (Array.isArray(elements)) return node.append(...elements);
+  node.append(elements);
 };

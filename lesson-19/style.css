@@ -1,0 +1,16 @@
+#app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ad {
+    display: flex;
+    justify-content: end;
+}
+
+.ad-wrapper {
+    width: 40%;
+
+}
