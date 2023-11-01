@@ -96,7 +96,6 @@ button:focus-visible {
   }
 }
 
-
-#starships {
-  background: lightseagreen;
+.btn--active {
+  background: darkmagenta;
 }
