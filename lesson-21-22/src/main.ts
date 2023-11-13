@@ -227,3 +227,185 @@ import './style.css';
 //  3)  Find carriage by color or id  
 
 // * TS optional
+// type colors = "darkmagenta" | "magenta" | "cyan" | "darkblue" | "yellow";
+
+// interface ICarriage {
+//     id : number;
+//     color : colors;
+// }
+
+// interface ITrain {
+//     driver : string;
+//     carriages : ICarriage[];
+// }
+
+// class Train { 
+//     constructor({driver , carriages} :ITrain) {
+//         this.driver = driver;
+//         this.carriages = carriages;
+//     }
+
+//     searchByColorDeclarative(color:string) : ICarriage[]{
+
+//         const data = [];
+
+//         for(const carriage of this.carriages){
+//             if(carriage.color === color) {
+//                 data.push(carriage);
+//             }
+//         }
+
+//         return data;
+
+//     }
+
+//     searchByColorImperative(color:string): ICarriage[] {
+//        return this.carriages.filter(carriage => carriage.color === color)
+//     }
+// }
+
+// const train = new Train({driver : "John" , carriages : [
+//     {
+//         id : 8,
+//         color : "darkmagenta"
+//     },
+//     {
+//         id : 9,
+//         color : "cyan"
+//     },
+//     {
+//         id : 10,
+//         color : "yellow"
+//     },
+//     {
+//         id : 11,
+//         color : "darkblue"
+//     },
+// ]})
+
+// const results = train.searchByColorDeclarative("yellow");
+// const resultsIMP = train.searchByColorImperative("yellow");
+// console.log(resultsIMP);
+
+// ! CONSTANTS 
+// const BASE_URL = "https://jsonplaceholder.typicode.com";
+// const ACTIVE_STATUS = "--active";
+
+// ! DOM
+// const text = document.querySelector('#text') as HTMLElement;
+// const mainImg = document.querySelector('#main-img') as HTMLImageElement;
+
+
+// enum ButtonsFunctions {
+//     GET = "Get",
+//     HIDE = "Hide"
+// }
+
+// enum ButtonsLinks {
+//     PHOTOS = 'photos',
+//     POSTS = 'posts',
+// }
+
+// const header = document.querySelector(".header") as HTMLElement;
+
+// header.addEventListener('click' , (e) => {
+//     const currentButton = e.target as HTMLElement;
+
+//     if (currentButton.tagName !== "BUTTON") return;
+
+//     const textContent = currentButton.textContent;
+
+//     const getPhotosCondition = textContent?.includes(ButtonsLinks.PHOTOS) 
+//     && textContent?.includes(ButtonsFunctions.GET);
+
+//     const getPostsCondition = textContent?.includes(ButtonsLinks.POSTS) 
+//     && textContent?.includes(ButtonsFunctions.GET);
+
+//     const hidePhotosCondition = textContent?.includes(ButtonsLinks.PHOTOS) 
+//     && textContent?.includes(ButtonsFunctions.HIDE);
+
+//     const hidePostsCondition = textContent?.includes(ButtonsLinks.POSTS) 
+//     && textContent?.includes(ButtonsFunctions.HIDE);
+
+//     if (getPhotosCondition) {
+//         getDataByEnpoing(BASE_URL,ButtonsLinks.PHOTOS);
+//     }
+//     else if (getPostsCondition) {
+//         getDataByEnpoing(BASE_URL,ButtonsLinks.POSTS);
+//     }
+//     else if (hidePhotosCondition){
+//         //!  To function
+//         const imagesClassName = mainImg?.className;
+
+//         if(imagesClassName?.includes(ACTIVE_STATUS)) {
+//             const indexOfStart = imagesClassName.indexOf(ACTIVE_STATUS);
+//             const slicedPart = imagesClassName.slice(0,indexOfStart);
+//             mainImg.className = slicedPart;
+//             mainImg.style.display = 'none';
+//         }else {
+//             mainImg.className += ACTIVE_STATUS;
+//             mainImg.style.display = 'block';
+//         }
+//     }
+//     else if(hidePostsCondition) {
+//         const parClassName = text?.className;
+//         console.log(parClassName)
+
+//         if(parClassName?.includes(ACTIVE_STATUS)) {
+//             const indexOfStart = parClassName.indexOf(ACTIVE_STATUS);
+//             const slicedPart = parClassName.slice(0,indexOfStart);
+//             text.className = slicedPart;
+//             text.style.display = 'none';
+//             console.log(text)
+//         }else {
+//             text.className += ACTIVE_STATUS;
+//             text.style.display = 'block';
+//         }
+//     }
+//     else {
+//         console.error("Error!");
+//     }
+// })
+
+// async function getDataByEnpoing(url:string, endpoint:string) {
+//     const data = await fetch(`${url}/${endpoint}`);
+//     const parsedData = await data.json();
+
+//     if(endpoint === 'photos'){
+//         const randomPhoto = parsedData[generateRandomNumber(parsedData.length)].url;
+//         mainImg.src = randomPhoto;
+//     }else if(endpoint === 'posts') {
+//         const randomPost = parsedData[generateRandomNumber(parsedData.length)].body;
+//         text.textContent = randomPost;
+//     }
+
+//     console.log(parsedData)
+// }
+
+// function generateRandomNumber(range : number){
+//     return Math.floor(Math.random() * range)
+// }
+
+// BIG O 
+
+
+
+
+
+// HW
+
+
+// ....1
+// 1. Imagine that we have an arr 
+// 2. Arr contains "Hello" , "World" , "Bob" , "John"
+// 3. Write function which will swap elements by it's index 
+
+// ....2
+//  Let's assume we have shop and we sell body parts
+// We should create CMS to create content on the site .
+// CMS should give us following functionality : 
+// 1. Add new product 
+// 2. Remove product
+// 3. Update product 
+// 4. Input as a search-panel , which will find elements by it`s props { prop : value } or title 
+// 5. Add filters by assess (1-5)

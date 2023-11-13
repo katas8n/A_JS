@@ -1,65 +1,58 @@
-// const trains = [
-//   {
-//     driver: "John Doe",
-//     wagons: [
-//       {
-//         number: 23,
-//         color: "darkmagenta",
-//       },
-//       {
-//         number: 13,
-//         color: "magenta",
-//       },
-//     ],
-//   },
-//   {
-//     driver: "John Smith",
-//     wagons: [
-//       {
-//         number: 23,
-//         color: "darkmagenta",
-//       },
-//       {
-//         number: 13,
-//         color: "magenta",
-//       },
-//     ],
-//   },
-// ];
+const trains = [
+  {
+    driver: "John Doe",
+    wagons: [
+      {
+        number: 23,
+        color: "darkmagenta",
+      },
+      {
+        number: 13,
+        color: "magenta",
+      },
+    ],
+  },
+  {
+    driver: "John Smith",
+    wagons: [
+      {
+        number: 23,
+        color: "darkmagenta",
+      },
+      {
+        number: 13,
+        color: "magenta",
+      },
+    ],
+  },
+];
 
-// function findByColor2(trains, expectedColor) {
-//   return trains.reduce((acc, cur) => {
-//     for (const wagon of cur.wagons) {
-//       const { number, color } = wagon;
-//       if (color === expectedColor) return wagon;
-//     }
-//   }, []);
-// }
+function findByColor2(trains, expectedColor) {
+  return trains.reduce((acc, cur) => {
+    for (const wagon of cur.wagons) {
+      const { number, color } = wagon;
+      if (color === expectedColor) return wagon;
 
-// function findByColor(color) {
-//   const data = [];
+      return "There is nothing here yet."
+    }
+  }, []);
+}
 
-//   for (const train of trains) {
-//     for (const wagon of train.wagons) {
-//       if (color === wagon.color)
-//         data.push({ wagon: wagon, driver: train.driver });
-//     }
-//   }
+function findByColor(color) {
+  const data = [];
 
-//   return data;
-// }
-
-// const result = findByColor("red");
-// const result2 = findByColor2(trains, "magenta");
-
-// console.log("[result]", result);
-// console.log("[result2]", result2);
-const header = document.querySelector(".header");
-
-header.addEventListener("click" , (e) => {
-  
-  if(e.target.className === "header"){
-    console.log(new Error("Huck you ,dummy ..."));
+  for (const train of trains) {
+    for (const wagon of train.wagons) {
+      if (color === wagon.color)
+        data.push({ wagon: wagon, driver: train.driver });
+    }
   }
-})
-console.log('[header]', header);
+
+  return data;
+}
+
+const result = findByColor("red");
+const result2 = findByColor2(trains, "magenta");
+
+console.log("[result]", result);
+console.log("[result2]", result2);
