@@ -394,7 +394,6 @@ import './style.css';
 
 // HW
 
-
 // ....1
 // 1. Imagine that we have an arr 
 // 2. Arr contains "Hello" , "World" , "Bob" , "John"
