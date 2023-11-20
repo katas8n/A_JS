@@ -1,35 +1,34 @@
 import './style.scss'
 
-// const validData = {
-//   email : "kkk",
-//   password : "23jsu",
-// }
+const validData = {
+  email : "kkk",
+  password : "23jsu",
+}
 
-// const email = document.querySelector("#email");
-// const password = document.querySelector("#password");
-// const loginBtn  = document.querySelector("#login-btn");
-// const invokeBtn = document.querySelector("#invoke-btn");
-// const modal = document.querySelector(".modal") as HTMLElement;
-// const background = document.querySelector(".background") as HTMLElement;
+const email = document.querySelector("#email");
+const password = document.querySelector("#password");
+const loginBtn  = document.querySelector("#login-btn");
+const invokeBtn = document.querySelector("#invoke-btn");
+const modal = document.querySelector(".modal") as HTMLElement;
+const background = document.querySelector(".background") as HTMLElement;
 
 
-// invokeBtn?.addEventListener("click" , (e) => {
-//   console.log(e)
-//   if(modal?.className.includes("--active")) {
-//     modal.className = "modal";
-//     background.className = "background"
-//   }else {
-//     modal.className = "modal--active";
-//     background.className = "background--active"
-//   }
+invokeBtn?.addEventListener("click" , (e) => {
+  console.log(e)
+  if(modal?.className.includes("--active")) {
+    modal.className = "modal";
+    background.className = "background"
+  }else {
+    modal.className = "modal--active";
+    background.className = "background--active"
+  }
  
-// })
+})
 
-// loginBtn?.addEventListener('click',(e) => {
-//   console.log(email.value)
-//   console.log(password.value)
-
-// })
+loginBtn?.addEventListener('click',(e) => {
+  console.log(email.value)
+  console.log(password.value)  
+})
 
 // function logError <A> (errMsg:A):A {
 //   return errMsg
@@ -106,4 +105,5 @@ import './style.scss'
 // }
 
 // swap(people ,1, 3)
+
 

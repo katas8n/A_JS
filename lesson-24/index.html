@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <form id="form">
+          <input name="name" type="text" placeholder="Name">
+          <input name="age" type="text" placeholder="Age">
+  
+          <div class="radio-btn-group">
+
+            <span>Male</span>
+            <input value="false" name="male" type="radio">
+
+            <span>Female</span>
+            <input value="false" name="female" type="radio">
+
+          </div>
+
+          <div class="btn-wrapper">
+            <button id="createUser">
+              Create
+            </button>
+          </div>
+        </form>
+      </header>
+
+      <main id="main">
+        
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
