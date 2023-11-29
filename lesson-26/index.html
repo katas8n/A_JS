@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <div id="app">
+      <form id="form">
+        <fieldset>
+          <input id="input-value" type="number" step="0.01">
+        </fieldset>
+
+        <select name="currency" id="currency">
+          <option value="$">$</option>
+          <option value="¥">¥</option>
+          <option value="f">f</option>
+          <option value="€">€</option>
+        </select>
+
+        <fieldset>
+          <input id="output" type="text" disabled>
+        </fieldset>
+
+        <button id="exchange">
+          Convert
+        </button>
+      </form>
+
+      <section>
+        <table>
+          <tr>
+            <td>$</td>
+            <td>¥</td>
+            <td>f</td>
+            <td>€</td>
+          </tr>
+
+          <tr id="current-currency">
+            <td id="d"></td>
+            <td id="y"></td>
+            <td id="p"></td>
+            <td id="e"></td>
+          </tr>
+        </table>
+      </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

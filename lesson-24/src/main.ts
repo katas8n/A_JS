@@ -79,7 +79,7 @@ interface User {
     age? : number , 
     gender? : Gender.MALE | Gender.FEMALE,
     color? : color,
-    sayHello : () => string
+    sayHello? : () => string
 }
 
 class Person implements User {

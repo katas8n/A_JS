@@ -14,3 +14,5 @@
 isAdmin = True
 
 print(not isAdmin)
+
+print(5 * "_ ")
