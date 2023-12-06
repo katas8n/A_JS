@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <nav>
+          <button>Login</button>
+          <button>Dashboards</button>
+        </nav>
+      </header>
+
+      <app-login>
+        <input type="text" name="login">
+        <input type="password" name="password">
+
+        <button id="login">Login</button>
+      </app-login>
+
+      <main class="main">
+        <app-dashboard id="app-dashboard">
+          
+        </app-dashboard>
+      </main>
+      
+      <footer class="footer">
+        <h3>All rights reserved (c)2023</h3>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
