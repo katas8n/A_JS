@@ -3,25 +3,25 @@
 1 verbose cli   '/Users/katas8n/.nvm/v0.8.28/bin/npm',
 1 verbose cli   'view',
 1 verbose cli   '--json',
-1 verbose cli   'cors',
+1 verbose cli   'mongodb',
 1 verbose cli   'description',
 1 verbose cli   'dist-tags.latest',
 1 verbose cli   'homepage',
 1 verbose cli   'version' ]
 2 info using npm@1.2.30
 3 info using node@v0.8.28
-4 verbose url raw cors
-5 verbose url resolving [ 'https://registry.npmjs.org/', './cors' ]
-6 verbose url resolved https://registry.npmjs.org/cors
-7 info trying registry request attempt 1 at 20:27:03
-8 http GET https://registry.npmjs.org/cors
-9 info retry will retry, error on last attempt: Error: 8603198016:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
-10 info trying registry request attempt 2 at 20:27:14
-11 http GET https://registry.npmjs.org/cors
-12 info retry will retry, error on last attempt: Error: 8603198016:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
-13 info trying registry request attempt 3 at 20:28:14
-14 http GET https://registry.npmjs.org/cors
-15 error Error: 8603198016:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+4 verbose url raw mongodb
+5 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb' ]
+6 verbose url resolved https://registry.npmjs.org/mongodb
+7 info trying registry request attempt 1 at 20:57:08
+8 http GET https://registry.npmjs.org/mongodb
+9 info retry will retry, error on last attempt: Error: 8602485312:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+10 info trying registry request attempt 2 at 20:57:18
+11 http GET https://registry.npmjs.org/mongodb
+12 info retry will retry, error on last attempt: Error: 8602485312:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
+13 info trying registry request attempt 3 at 20:58:18
+14 http GET https://registry.npmjs.org/mongodb
+15 error Error: 8602485312:error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version:../deps/openssl/openssl/ssl/s23_clnt.c:658:
 15 error
 15 error     at CleartextStream._puller (tls.js:670:24)
 15 error     at CleartextStream.CryptoStream._pull (tls.js:604:19)
@@ -35,7 +35,7 @@
 16 error or email it to:
 16 error     <npm-@googlegroups.com>
 17 error System Darwin 23.0.0
-18 error command "/Users/katas8n/.nvm/v0.8.28/bin/node" "/Users/katas8n/.nvm/v0.8.28/bin/npm" "view" "--json" "cors" "description" "dist-tags.latest" "homepage" "version"
+18 error command "/Users/katas8n/.nvm/v0.8.28/bin/node" "/Users/katas8n/.nvm/v0.8.28/bin/npm" "view" "--json" "mongodb" "description" "dist-tags.latest" "homepage" "version"
 19 error cwd /Users/katas8n/A_JS/lesson-29/server
 20 error node -v v0.8.28
 21 error npm -v 1.2.30

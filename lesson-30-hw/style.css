@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+  grid-template-rows: repeat(8, 100px);
+  text-align: center;
+}
+
+.light {
+  background-color: magenta;
+}
+
+.dark {
+  background-color: darkmagenta;
+}

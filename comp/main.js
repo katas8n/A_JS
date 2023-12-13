@@ -1,4 +1,3 @@
-"use strict";
 var Gender;
 (function (Gender) {
     Gender["MALE"] = "male";
