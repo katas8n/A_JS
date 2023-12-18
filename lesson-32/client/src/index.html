@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <div id="app" class="d-flex vh-100 justify-content-center align-items-center bg-dark bg-gradient">
+      <form class="d-flex flex-column" action="http://localhost:3000/api/submit-profile" id="profileForm" method="post" enctype="multipart/form-data" >
+        <fieldset class="d-flex justify-content-between">
+          <label class="text-light" for="username">Username: </label>
+          <input name="username" type="text" id="username" required>
+        </fieldset>
+
+        <fieldset class="d-flex justify-content-between mt-4">
+          <label class="text-light" for="password">Password: </label>
+          <input name="password" type="password" id="password" required>
+        </fieldset>
+
+        <fieldset class="col-8"> 
+          <label class="text-light" for="avatar">Avatar</label>
+          <input class="form-control form-control-sm" type="file" id="avatar" name="avatar" accept="image/*">
+        </fieldset>
+
+        <div class="btn-wrapper mt-5 d-flex justify-content-center"  class="col-4">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <section id="profiles" class="d-flex flex-column align-items-center bg-dark bg-gradient p-3">
+
+      <div class="btn btn-primary" id="get">Get profiles</div>
+    </section>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
