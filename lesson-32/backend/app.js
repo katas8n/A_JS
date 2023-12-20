@@ -19,17 +19,15 @@ mongoose.connect("mongodb+srv://zohman:2323@cluster0.nhedlre.mongodb.net/?retryW
     collection: 'profile'
 });
 
-const storage = multer.diskStorage({
-    destination: function(req, file, cb) {
-        cb(null, "../client/src/uploads");
-    },
-    filename : function(req, file, cb) {
-        cb(null, file.fieldname + "-" + Date.now() + ".png");
-    }
-});
-
 const upload = multer({
-    storage : storage
+    storage : multer.diskStorage({
+        destination: function(req, file, cb) {
+            cb(null, "../client/src/uploads");
+        },
+        filename : function(req, file, cb) {
+            cb(null, file.fieldname + "-" + Date.now() + ".png");
+        }
+    })
 });
 
 app.get("/api/get-profiles" , (req, res) => {
